@@ -27,8 +27,9 @@ export const NavigationContainer = styled.div `
     align-items:center;
     color:white;
     width:100vw;
-    background: #000;
     height:60px;
+    position:fixed;
+    top:0;
 `;
 
 export const NavigationTitle = styled.div `
@@ -47,7 +48,7 @@ export const NavigationMenuContainer = styled.div `
     grid-column: 2/2;
     max-height:100%;
     align-items:center;
-    grid-template-columns:repeat(4, auto);
+    grid-template-columns:repeat(7, auto);
 
     ${ media.phone`display:none;` }
 `;

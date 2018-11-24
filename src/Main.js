@@ -7,8 +7,11 @@ class Main extends Component {
     
     menuItems: [
       { label: 'Home' },
+      { label: 'o' },
       { label: 'My Work' },
+      { label: 'o' },
       { label: 'About' },
+      { label: 'o' },
       { label: 'Contact' },
     ],
 
