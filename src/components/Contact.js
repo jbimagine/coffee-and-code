@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ContactContainer, ContactTitleContainer, ContactTitle } from '../styled-components/Contact_Styles';
+import { ContactContainer, ContactInfoContainer, ContactTitleContainer, ContactTitle } from '../styled-components/Contact_Styles';
 
 const ColoredLine = ({ color }) => (
     <hr
@@ -17,10 +17,13 @@ class Contact extends Component {
     return (
     <>
     <ContactContainer>
+        <ContactInfoContainer>
+
+        </ContactInfoContainer>
         <ContactTitleContainer>
         <ContactTitle>
             <div>Contact</div>
-        <ColoredLine color="black" />
+        <ColoredLine color="#FFF" />
         </ContactTitle>
         </ContactTitleContainer>
     </ContactContainer>

@@ -23,11 +23,12 @@ export const NavigationContainer = styled.div `
     display:grid;
     /* grid-template-columns:repeat(12,1fr); */
     /* grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); */
+    box-shadow: 0 0 20px 6px #8a8a8a73;
     grid-template-columns: repeat(2, 1fr);
     align-items:center;
     color:white;
     width:100vw;
-    background-color: rgba( 0, 0, 0, 0.75 );
+    background-color: rgba(94, 158, 202, 0.75);
     height:100px;
     position:fixed;
     text-transform:uppercase;

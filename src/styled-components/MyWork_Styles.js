@@ -4,7 +4,7 @@ import { css } from 'styled-components';
 
 export const MyWorkContainer = styled.div `
     height:calc(100vh - 100px);
-    background:#ccc;
+    background:#f3f3f3;
 `;
 
 export const MyWorkTitleContainer = styled.div `

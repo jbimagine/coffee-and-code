@@ -5,7 +5,7 @@ import { css } from 'styled-components';
 export const AboutContainer = styled.div `
     height:calc(100vh - 100px);
     color:#FFF;
-    background:#333;
+    background-color:rgb(94, 158, 202);
 `;
 
 export const AboutTitleContainer = styled.div `
