@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { AboutContainer, AboutTitleContainer, AboutTitle } from '../styled-components/About_Styles';
+import { AboutContainer, AboutTitleContainer } from '../styled-components/About_Styles';
+import { ContentHeader } from '../styled-components/Gloabal_styles';
+
 
 const ColoredLine = ({ color }) => (
     <hr
@@ -28,10 +30,9 @@ class About extends Component {
     <>
     <AboutContainer>
         <AboutTitleContainer>
-        <AboutTitle>
-            <div>About</div>
+        <ContentHeader title = 'About' color = '#FFF' underline = {true} >
         <ColoredLine color="#fff" />
-        </AboutTitle>
+        </ContentHeader>
         </AboutTitleContainer>
     </AboutContainer>
 

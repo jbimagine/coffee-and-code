@@ -1,15 +1,8 @@
 import React, { Component } from 'react';
-import { MyWorkContainer, MyWorkTitleContainer, MyWorkTitle } from '../styled-components/MyWork_Styles';
+import { MyWorkContainer, MyWorkTitleContainer, } from '../styled-components/MyWork_Styles';
+import { ContentHeader } from '../styled-components/Gloabal_styles';
 
-const ColoredLine = ({ color }) => (
-    <hr
-        style={{
-            color: color,
-            backgroundColor: color,
-            height: 1,
-        }}
-    />
-);
+
 class MyWork extends Component {
 
   state = {
@@ -28,10 +21,8 @@ class MyWork extends Component {
     <>
     <MyWorkContainer>
         <MyWorkTitleContainer>
-        <MyWorkTitle>
-            <div>My Work</div>
-        <ColoredLine color="#666" />
-        </MyWorkTitle>
+            <ContentHeader title ='My Work' underline = {true}/>
+        
         </MyWorkTitleContainer>
         <div style = {{ display:'grid', gridTemplateColumns:'repeat(5,1fr)', justifyItems:'center', marginTop:'10vh' }} >
         <div style = {{ backgroundColor:'rgb(94,158,202)', height: '40vh', width: '15vw', display:'grid',margin:'0 32px', borderRadius:'10px', marginTop: '10vh' }}></div>

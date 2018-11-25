@@ -4,19 +4,11 @@ import {
     ContactInfoContainer,
     ContactInfoBody, 
     ContactTitleContainer, 
-    ContactFormContainer, 
-    ContactTitle, 
+    ContactFormContainer,  
     } from '../styled-components/Contact_Styles';
+    import { ContentHeader } from '../styled-components/Gloabal_styles';
 
-const ColoredLine = ({ color }) => (
-    <hr
-        style={{
-            color: color,
-            backgroundColor: color,
-            height: 1,
-        }}
-    />
-);
+
 class Contact extends Component {
 
 
@@ -26,22 +18,20 @@ class Contact extends Component {
     <ContactContainer>
         <ContactInfoContainer>
             <ContactInfoBody>
-                <div>Address</div>
-                <div> 2020 Judah St.</div>
-                <div>Contact</div>
-                <div>Joseph D. Bates</div>
-                <div>Phone</div>
-                <div>415-770-7058</div>
-                <div>Email</div>
-                <div>joebates@coffeeandcode.me</div>
+                <ContentHeader title = 'Address' fontSize = '14px' color= '#666' fontWeight = {500} padding= '0 0 8px 0'/>
+                <ContentHeader title = '2020 Judah St. Unit A' fontSize = '18px' padding ='0 0 24px 0' />
+                <ContentHeader title = 'Contact' fontSize = '14px' color= '#666' fontWeight = {500} padding= '0 0 8px 0'/>
+                <ContentHeader title = 'Joseph D. Bates' fontSize = '18px' padding ='0 0 24px 0' />
+                <ContentHeader title = 'Phone' fontSize = '14px' color= '#666' fontWeight = {500} padding= '0 0 8px 0'/>
+                <ContentHeader title = '415-770-7058' fontSize = '18px' padding ='0 0 24px 0'/>
+                <ContentHeader title = 'Email' fontSize = '14px' color= '#666' fontWeight = {500} padding= '0 0 8px 0'/>
+                <ContentHeader title = 'joebates@jbimagine.com' fontSize = '18px' />
             </ContactInfoBody>
         </ContactInfoContainer>
         <ContactFormContainer>
         <ContactTitleContainer>
-        <ContactTitle>
-            <div>Get In Touch</div>
-        <ColoredLine color="#FFF" />
-        </ContactTitle>
+        <ContentHeader title = 'Get In Touch' underline = {true}>
+        </ContentHeader>
         </ContactTitleContainer>
         </ContactFormContainer>
         
