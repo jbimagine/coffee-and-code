@@ -2,14 +2,15 @@
 import React from 'react';
 
 
-export const ContentHeader = ({ color, title, fontSize, underline, fontWeight, textTransform, padding }) => (
+export const ContentHeader = ({ color, title, fontSize, underline, fontWeight, textTransform, padding, letterSpacing }) => (
     <div
        style={{
            color: color,
            textTransform:textTransform?textTransform:'uppercase',
            fontSize:fontSize?fontSize:'36px',
            fontWeight:fontWeight,
-           padding: padding?padding:null
+           padding: padding?padding:null,
+           letterSpacing: letterSpacing?letterSpacing:'8px',
        }}
    >{ title }
    {

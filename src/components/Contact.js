@@ -11,21 +11,62 @@ import {
 
 class Contact extends Component {
 
+    state = {
+        contactItems:
+        [
+            {
+                label: 'Address',
+                key: 'header_main',
+            },
+            {
+                label: '2020 Judah St. Unit A',
+                key: 'header_secondary',
+            },
+            {
+                label: 'Contact',
+                key: 'header_main',
+            },
+            {
+                label: 'Joseph D. Bates',
+                key: 'header_secondary',
+            },
+            {
+                label: 'Phone',
+                key: 'header_main',
+            },
+            {
+                label: '415-770-7058',
+                key: 'header_secondary',
+            },
+            {
+                label: 'Email',
+                key: 'header_main',
+            },
+            {
+                label:'joebates@jbimagine.com',
+                key: 'header_secondary',
+            },
+        ]
+    
+    } 
+
 
   render() {
+
+    const listOfContactItems =  this.state.contactItems.map(item => 
+        
+        item.key === 'header_main'? 
+        <ContentHeader title = { item.label } fontSize = '14px' color= '#666' fontWeight = {500} padding= '0 0 8px 0'/>
+        :
+        <ContentHeader title = { item.label } fontSize = '18px' padding ='0 0 48px 0' />
+        )
+
     return (
     <>
     <ContactContainer>
         <ContactInfoContainer>
             <ContactInfoBody>
-                <ContentHeader title = 'Address' fontSize = '14px' color= '#666' fontWeight = {500} padding= '0 0 8px 0'/>
-                <ContentHeader title = '2020 Judah St. Unit A' fontSize = '18px' padding ='0 0 24px 0' />
-                <ContentHeader title = 'Contact' fontSize = '14px' color= '#666' fontWeight = {500} padding= '0 0 8px 0'/>
-                <ContentHeader title = 'Joseph D. Bates' fontSize = '18px' padding ='0 0 24px 0' />
-                <ContentHeader title = 'Phone' fontSize = '14px' color= '#666' fontWeight = {500} padding= '0 0 8px 0'/>
-                <ContentHeader title = '415-770-7058' fontSize = '18px' padding ='0 0 24px 0'/>
-                <ContentHeader title = 'Email' fontSize = '14px' color= '#666' fontWeight = {500} padding= '0 0 8px 0'/>
-                <ContentHeader title = 'joebates@jbimagine.com' fontSize = '18px' />
+                { listOfContactItems }
             </ContactInfoBody>
         </ContactInfoContainer>
         <ContactFormContainer>
