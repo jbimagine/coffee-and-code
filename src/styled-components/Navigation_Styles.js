@@ -27,7 +27,7 @@ export const NavigationContainer = styled.div `
     align-items:center;
     color:white;
     width:100vw;
-    background: #000;
+    background-color: rgba( 0, 0, 0, 0.75 );
     height:100px;
     position:fixed;
     text-transform:uppercase;

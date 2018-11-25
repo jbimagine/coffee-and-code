@@ -2,17 +2,18 @@
 import styled from 'styled-components';
 import { css } from 'styled-components';
 
-export const MyWorkContainer = styled.div `
+export const AboutContainer = styled.div `
     height:calc(100vh - 100px);
-    background:#ccc;
+    color:#FFF;
+    background:#333;
 `;
 
-export const MyWorkTitleContainer = styled.div `
+export const AboutTitleContainer = styled.div `
     display:grid;
     justify-content:center;
     padding-top: 24px;
 `
 
-export const MyWorkTitle = styled.div `
+export const AboutTitle = styled.div `
     font-size: 36px;
 `

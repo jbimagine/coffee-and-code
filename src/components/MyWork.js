@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
-import { MyWorkContainer } from '../styled-components/MyWork_Styles';
+import { MyWorkContainer, MyWorkTitleContainer, MyWorkTitle } from '../styled-components/MyWork_Styles';
 
+const ColoredLine = ({ color }) => (
+    <hr
+        style={{
+            color: color,
+            backgroundColor: color,
+            height: 1,
+        }}
+    />
+);
 class MyWork extends Component {
 
   state = {
@@ -14,13 +23,16 @@ class MyWork extends Component {
 
   }
 
-
-
   render() {
     return (
     <>
     <MyWorkContainer>
-
+        <MyWorkTitleContainer>
+        <MyWorkTitle>
+            <div>My Work</div>
+        <ColoredLine color="black" />
+        </MyWorkTitle>
+        </MyWorkTitleContainer>
     </MyWorkContainer>
 
     </>
