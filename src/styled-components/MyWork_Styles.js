@@ -4,7 +4,7 @@ import { css } from 'styled-components';
 
 export const MyWorkContainer = styled.div `
     height:calc(100vh - 100px);
-    background:#f3f3f3;
+    background:#fff;
 `;
 
 export const MyWorkTitleContainer = styled.div `
@@ -15,4 +15,5 @@ export const MyWorkTitleContainer = styled.div `
 
 export const MyWorkTitle = styled.div `
     font-size: 36px;
+    color:#666;
 `

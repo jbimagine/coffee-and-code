@@ -23,7 +23,7 @@ export const NavigationContainer = styled.div `
     display:grid;
     /* grid-template-columns:repeat(12,1fr); */
     /* grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); */
-    box-shadow: 0 0 20px 6px #8a8a8a73;
+    box-shadow: 0 0 18px 6px #006ead36;
     grid-template-columns: repeat(2, 1fr);
     align-items:center;
     color:white;
