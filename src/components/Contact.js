@@ -35,7 +35,7 @@ class Contact extends Component {
                 key: 'header_main',
             },
             {
-                label: '415-770-7058',
+                label: '1-415-770-7058',
                 key: 'header_secondary',
             },
             {
@@ -58,7 +58,7 @@ class Contact extends Component {
         item.key === 'header_main'? 
         <ContentHeader title = { item.label } fontSize = '14px' color= '#666' fontWeight = {500} padding= '0 0 8px 0'/>
         :
-        <ContentHeader title = { item.label } fontSize = '18px' padding ='0 0 48px 0' />
+        <ContentHeader title = { item.label } fontSize = '18px' padding ='0 0 54px 0' />
         )
 
     return (
