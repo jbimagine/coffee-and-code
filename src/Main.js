@@ -1,5 +1,23 @@
 import React, { Component } from 'react';
-import Navigation from './components/Navigation'
+import Navigation from './components/Navigation';
+import MyWork from './components/MyWork';
+import About from './components/About';
+import Contact from './components/Contact';
+import coffeeAndCodeSVG from './imgs/coffee_and_code_image_01.png';
+
+const sx = {
+  background : {
+    height:'100vh',
+    backgroundImage:`url(${ coffeeAndCodeSVG })`, 
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition:'center',
+    position:'relative',
+    opacity:0.5,
+  }
+}
+
+const circleUniCode = String.fromCharCode(9675);
 
 class Main extends Component {
 
@@ -7,11 +25,8 @@ class Main extends Component {
     
     menuItems: [
       { label: 'Home' },
-      { label: 'o' },
       { label: 'My Work' },
-      { label: 'o' },
       { label: 'About' },
-      { label: 'o' },
       { label: 'Contact' },
     ],
 
@@ -22,10 +37,16 @@ class Main extends Component {
   render() {
     return (
      <>
+    <div style = {sx.background} >
+    </div>
+    <div style = {{ position:'absolute', zIndex: 1, color:'white', textTransform:'uppercase', fontSize: '36px', top: '50%', marginRight:'48px', right:0 }}>Coffee + Code = Awesomeness</div>
+     
     <Navigation
-    title = { 'COFFEE AND CODE' }
+    title = { `COFFEE ${ circleUniCode } AND ${ circleUniCode } CODE` }
     menuItems = { this.state.menuItems }
     />
+  
+     <MyWork/>
      </>
     );
   }

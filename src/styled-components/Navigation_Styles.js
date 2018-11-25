@@ -27,9 +27,12 @@ export const NavigationContainer = styled.div `
     align-items:center;
     color:white;
     width:100vw;
-    height:60px;
+    background: #000;
+    height:100px;
     position:fixed;
+    text-transform:uppercase;
     top:0;
+    z-index:5;
 `;
 
 export const NavigationTitle = styled.div `
@@ -39,7 +42,7 @@ export const NavigationTitle = styled.div `
     align-items:center;
     height:60px;
     max-height:60px;
-    padding: 0 0 0 16px;
+    margin-left: 32px;
     justify-items: start;
 `;
 
@@ -48,7 +51,8 @@ export const NavigationMenuContainer = styled.div `
     grid-column: 2/2;
     max-height:100%;
     align-items:center;
-    grid-template-columns:repeat(7, auto);
+    grid-template-columns:repeat(4, auto);
+    margin-right:32px;
 
     ${ media.phone`display:none;` }
 `;
@@ -57,7 +61,9 @@ export const NavigationMenuItems = styled.div `
     display:grid;
     font-size:12px;
     margin: 0 8px;
+    letter-spacing:4px;
     cursor:pointer;
+    justify-content:end;
 `;
 
 export const NavigationMenuIconContainer = styled.div `
@@ -66,7 +72,7 @@ export const NavigationMenuIconContainer = styled.div `
     ${ media.phone`
         display:grid;
         justify-content:end;
-        margin-right:16px;` 
+        margin-right:32px;` 
     }
 `;
 
