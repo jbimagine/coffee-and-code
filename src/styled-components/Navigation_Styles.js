@@ -1,23 +1,7 @@
 
 import styled from 'styled-components';
-import { css } from 'styled-components';
+import { media } from './Gloabal_styles';
 
-// Set the queries for the different media sizes
-const sizes = {
-    desktop: 1440,
-    tablet: 768,
-    phone: 650,
-}
-
-const media = Object.keys(sizes).reduce((acc, label) => {
-    acc[label] = (...args) => css`
-      @media (max-width: ${sizes[label] / 16}em) {
-        ${css(...args)}
-      }
-    `
-  
-    return acc
-  }, {})
 
 export const NavigationContainer = styled.div `
     display:grid;
@@ -55,7 +39,7 @@ export const NavigationMenuContainer = styled.div `
     grid-template-columns:repeat(4, auto);
     margin-right:32px;
 
-    ${ media.phone`display:none;` }
+    ${ media.tablet`display:none;` }
 `;
 
 export const NavigationMenuItems = styled.div `
@@ -70,7 +54,7 @@ export const NavigationMenuItems = styled.div `
 export const NavigationMenuIconContainer = styled.div `
     display:none;
 
-    ${ media.phone`
+    ${ media.tablet`
         display:grid;
         justify-content:end;
         margin-right:32px;` 

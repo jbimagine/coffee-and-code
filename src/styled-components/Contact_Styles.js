@@ -3,16 +3,22 @@ import styled from 'styled-components';
 
 export const ContactContainer = styled.div `
     display:grid;
-    grid-template-columns:repeat(2,1fr);
     height:calc(100vh - 100px);
     color:#FFF;
     background-color:rgb(94, 158, 202);    
+
+    @media (min-width: 1001px) {
+        grid-template-columns:repeat(2,1fr);
+    }
+    
+    @media (max-width: 1000px) {
+        grid-template-rows:repeat(2,1fr);
+    }
 `;
 
 export const ContactInfoContainer = styled.div `
     background:#f3f3f3;
     color: #222;
-    grid-column:1/2;
 `;
 
 export const ContactInfoBody = styled.div `
@@ -22,7 +28,6 @@ export const ContactInfoBody = styled.div `
     height:100%;
 `;
 export const ContactFormContainer = styled.div `
-    grid-column:2/2;
 
 `;
 

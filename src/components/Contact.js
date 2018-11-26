@@ -56,9 +56,9 @@ class Contact extends Component {
     const listOfContactItems =  this.state.contactItems.map(item => 
         
         item.key === 'header_main'? 
-        <ContentHeader title = { item.label } fontSize = '14px' color= '#666' fontWeight = {500} padding= '0 0 8px 0'/>
+        <ContentHeader title = { item.label } fontSize = '12px' color= '#666' fontWeight = {500} padding= '0 0 8px 0'/>
         :
-        <ContentHeader title = { item.label } fontSize = '18px' padding ='0 0 54px 0' />
+        <ContentHeader title = { item.label } fontSize = '14px' padding ='0 0 54px 0' />
         )
 
     return (

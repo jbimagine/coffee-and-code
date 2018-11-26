@@ -41,14 +41,16 @@ class Main extends Component {
     </div>
     {/* <div style = {{ position:'absolute', zIndex: 1, color:'white', textTransform:'uppercase', fontSize: '36px', top: '50%', marginRight:'48px', right:0 }}>Coffee + Code = Awesomeness</div>  */}
      
+    <div>
     <Navigation
     title = { `COFFEE ${ circleUniCode } AND ${ circleUniCode } CODE` }
     menuItems = { this.state.menuItems }
     />
   
-     <MyWork/>
+     {/* <MyWork/> */}
      <About/>
      <Contact/>
+    </div>
      </>
     );
   }
