@@ -4,7 +4,8 @@ import {
     ContactInfoContainer,
     ContactInfoBody, 
     ContactTitleContainer, 
-    ContactFormContainer,  
+    ContactFormContainer,
+    ContactFormBackground,  
     } from '../styled-components/Contact_Styles';
     import { ContentHeader } from '../styled-components/Gloabal_styles';
 
@@ -70,6 +71,7 @@ class Contact extends Component {
             </ContactInfoBody>
         </ContactInfoContainer>
         <ContactFormContainer>
+            <ContactFormBackground/>
         <ContactTitleContainer>
         <ContentHeader title = 'Get In Touch' underline = {true}>
         </ContentHeader>

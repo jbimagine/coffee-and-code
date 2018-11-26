@@ -1,5 +1,7 @@
 
 import styled from 'styled-components';
+import coffeeAndCodeSVG02 from '../imgs/coffee_and_code_image_06.jpg';
+
 
 export const ContactContainer = styled.div `
     display:grid;
@@ -32,6 +34,26 @@ export const ContactInfoBody = styled.div `
     height:100%;
 `;
 export const ContactFormContainer = styled.div `
+    
+`;
+export const ContactFormBackground = styled.div `
+    
+    position:absolute;
+    background-image:url( ${coffeeAndCodeSVG02});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:right;
+    opacity:0.1;
+
+    @media (min-width: 1001px) {
+        height:calc(100vh - 100px);
+        width:50vw;
+    }
+    
+    @media (max-width: 1000px) {
+        width:100vw;
+        height: calc(50vh - 50px);
+    }
 `;
 
 export const ContactTitleContainer = styled.div `
