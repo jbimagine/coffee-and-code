@@ -19,6 +19,10 @@ export const ContactContainer = styled.div `
 export const ContactInfoContainer = styled.div `
     background:#f3f3f3;
     color: #222;
+
+    @media (max-width: 1000px) {
+        padding-top:24px;
+    }
 `;
 
 export const ContactInfoBody = styled.div `
@@ -28,7 +32,6 @@ export const ContactInfoBody = styled.div `
     height:100%;
 `;
 export const ContactFormContainer = styled.div `
-
 `;
 
 export const ContactTitleContainer = styled.div `

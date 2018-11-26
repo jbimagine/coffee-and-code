@@ -47,7 +47,7 @@ class Main extends Component {
     menuItems = { this.state.menuItems }
     />
   
-     {/* <MyWork/> */}
+      <MyWork/> 
      <About/>
      <Contact/>
     </div>
