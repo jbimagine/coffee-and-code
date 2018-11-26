@@ -1,7 +1,7 @@
 
 import React from 'react';
-import styled from 'styled-components';
 import { css } from 'styled-components';
+
 // Set the queries for the different media sizes
 export const sizes = {
     desktop: 1440,
