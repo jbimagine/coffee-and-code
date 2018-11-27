@@ -11,8 +11,16 @@ export const AboutTitleContainer = styled.div `
     display:grid;
     justify-content:center;
     padding-top: 24px;
-`
+`;
 
 export const AboutTitle = styled.div `
     font-size: 36px;
-`
+`;
+
+export const AboutInfoContainer = styled.div `
+
+`;
+
+export const AboutImageContainer = styled.div `
+
+`;

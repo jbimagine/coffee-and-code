@@ -1,17 +1,7 @@
 import React, { Component } from 'react';
-import { AboutContainer, AboutTitleContainer } from '../styled-components/About_Styles';
-import { ContentHeader } from '../styled-components/Gloabal_styles';
+import { AboutContainer, AboutTitleContainer, AboutImageContainer } from '../styled-components/About_Styles';
+import { ContentHeader } from '../styled-components/Global_styles';
 
-
-const ColoredLine = ({ color }) => (
-    <hr
-        style={{
-            color: color,
-            backgroundColor: color,
-            height: 1,
-        }}
-    />
-);
 class About extends Component {
 
   state = {
@@ -31,9 +21,11 @@ class About extends Component {
     <AboutContainer>
         <AboutTitleContainer>
         <ContentHeader title = 'About' color = '#FFF' underline = {true} >
-        <ColoredLine color="#fff" />
         </ContentHeader>
         </AboutTitleContainer>
+        <AboutImageContainer>
+          
+        </AboutImageContainer>
     </AboutContainer>
 
     </>
