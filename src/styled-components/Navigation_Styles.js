@@ -1,6 +1,6 @@
 
 import styled from 'styled-components';
-import { media } from './Gloabal_styles';
+import { media } from './Global_styles';
 
 
 export const NavigationContainer = styled.div `
