@@ -83,12 +83,23 @@ export const ContactInputItems = styled.input `
     border:0;
     border-bottom: 1px solid #FFF;
     color:#FFF;
-    width:200px;
     margin:24px 0;
-    justify-self: ${ props => props.contactInputItems_justifySelf?props.contactInputItems_justifySelf:'start' };
+    justify-self: ${ props => props.justifySelf?props.justifySelf:'start' };
+
+    &:focus {
+        outline:none;
+    }
 
     &::placeholder {
         color:#FFF;
+    }
+
+    @media (min-width: 1001px) {
+    width:80%;
+    }
+    
+    @media (max-width: 1000px) {
+    width:100%;
     }
 `;
 
@@ -97,4 +108,5 @@ export const ContactTextArea = styled.textarea `
     padding:10px;
     height:350px;
     margin: 0 0 24px 0;
+    resize:none;
 `;

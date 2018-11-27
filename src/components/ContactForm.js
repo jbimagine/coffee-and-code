@@ -40,7 +40,7 @@ class ContactForm extends Component {
             onChange = { this.handleChange } 
             />
             <ContactInputItems 
-            contactInputItems_justifySelf = { 'end' }
+            justifySelf = { 'end' }
             name = 'email'
             placeholder = 'Email' 
             value = { this.state.email } 
@@ -63,8 +63,8 @@ class ContactForm extends Component {
 
         <FormButtonContainer >
         <FormButton  onClick = { e => this.onSubmit(e) }
-            formButton_border ={ '1px solid #fff' }
-            formButton_color = { '#FFF' }
+            border ={ '1px solid #fff' }
+            color = { '#FFF' }
         > Submit </FormButton>
         </FormButtonContainer>
     </>

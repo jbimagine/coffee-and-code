@@ -80,7 +80,7 @@ class Contact extends Component {
         <ContentHeader title = 'Get In Touch' underline = {true}></ContentHeader>
         </ContactTitleContainer>
         <div style = {{ display:'grid', justifyContent:'center' }} >
-        <ContentHeader title = 'Want to know more?  Drop me a line!' fontSize = '16px' padding = '48px 0'/>
+        <ContentHeader title = 'Want to know more?  Drop me a line!' fontSize = '16px' padding = '48px 0' textAlign = 'center' />
         </div>
 
         <ContactForm

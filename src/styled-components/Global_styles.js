@@ -21,7 +21,7 @@ export const media = Object.keys(sizes).reduce((acc, label) => {
   }, {})
 
 
-export const ContentHeader = ({ color, title, fontSize, underline, fontWeight, textTransform, padding, letterSpacing }) => (
+export const ContentHeader = ({ color, title, fontSize, underline, fontWeight, textTransform, padding, letterSpacing, textAlign }) => (
     <div
        style={{
            color: color,
@@ -30,6 +30,7 @@ export const ContentHeader = ({ color, title, fontSize, underline, fontWeight, t
            fontWeight:fontWeight,
            padding: padding?padding:null,
            letterSpacing: letterSpacing?letterSpacing:'8px',
+           textAlign: textAlign?textAlign:'left',
        }}
    >{ title }
    {
@@ -56,10 +57,10 @@ export const FormButtonContainer = styled.div `
 `;
 
 export const FormButton = styled.button `
-    border-radius: ${ props => props.formButtom_borderRadius?props.formButtom_borderRadius:'5px' };
-    border: ${ props => props.formButton_border?props.formButton_border:'none' } ;
+    border-radius: ${ props => props.borderRadius?props.borderRadius:'5px' };
+    border: ${ props => props.border?props.border:'none' } ;
     background:none;
-    color: ${ props => props.formButton_color?props.formButton_color:'#333' } ;
-    width:${ props => props.formButton_width?props.formButton_width: `75px`};
-    height:${ props => props.formButton_height?props.formButton_height: `25px`};
+    color: ${ props => props.color?props.color:'#333' } ;
+    width:${ props => props.width?props.width: `75px`};
+    height:${ props => props.height?props.height: `25px`};
 `;
