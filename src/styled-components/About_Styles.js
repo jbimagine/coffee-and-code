@@ -2,9 +2,11 @@
 import styled from 'styled-components';
 
 export const AboutContainer = styled.div `
+display:grid;
     height:calc(100vh - 100px);
     color:#FFF;
     background-color:rgb(94, 158, 202);
+    grid-template-rows:80px;
 `;
 
 export const AboutTitleContainer = styled.div `

@@ -4,17 +4,6 @@ import { ContentHeader } from '../styled-components/Global_styles';
 
 class About extends Component {
 
-  state = {
-    
-    menuItems: [
-      { label: 'Home' },
-      { label: 'My Work' },
-      { label: 'About' },
-      { label: 'Contact' },
-    ],
-
-  }
-
   render() {
     return (
     <>
@@ -23,9 +12,14 @@ class About extends Component {
         <ContentHeader title = 'About' color = '#FFF' underline = {true} >
         </ContentHeader>
         </AboutTitleContainer>
-        <AboutImageContainer>
-          
-        </AboutImageContainer>
+       <div style = {{ display:'grid', gridTemplateColumns:'1fr 2fr', height:'100%' }}>
+          <div style = {{ display:'flex', justifyContent:'center', alignItems:'center', height:'100%',  width:'100%' }}>
+            <div style = {{ display:'flex', width:'300px', height:'400px', backgroundColor:'#FFF', borderRadius:'5px' }}></div>
+          </div>
+          <div style = {{ display:'flex', justifyContent:'center', alignItems:'center', height:'100%', }}>
+          <div style = {{ display:'flex', width:'900px', height:'600px', backgroundColor:'#FFF', borderRadius:'5px' }}></div>
+          </div>
+       </div>
     </AboutContainer>
 
     </>
