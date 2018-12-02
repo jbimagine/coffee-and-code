@@ -39,7 +39,7 @@ class MyWork extends Component {
   render() {
     return (
     <>
-    <MyWorkContainer>
+    <MyWorkContainer ref={this.props.myWork_ref}>
         <MyWorkTitleContainer>
             <ContentHeader title ='My Work' underline = {true}/>
         

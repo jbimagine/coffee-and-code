@@ -17,6 +17,8 @@ const sx = {
   }
 }
 
+const navigationHeight = 100
+
 const circleUniCode = String.fromCharCode(9675);
 
 class Main extends Component {
@@ -32,7 +34,17 @@ class Main extends Component {
 
   }
 
+  constructor(props) {
+    super(props)
+    this.myRef = React.createRef();
+}
 
+scrollToMyRef = () => {
+  window.scrollTo({
+      top:this.myRef.current.offsetTop - navigationHeight, 
+      behavior: "smooth"
+  })
+}
 
   render() {
     return (
@@ -43,11 +55,15 @@ class Main extends Component {
      
     <div>
     <Navigation
+    scrollToMyRef = { this.scrollToMyRef }
     title = { `COFFEE ${ circleUniCode } AND ${ circleUniCode } CODE` }
     menuItems = { this.state.menuItems }
+    navigationHeight = { navigationHeight }
     />
   
-      <MyWork/> 
+      <MyWork
+      myWork_ref={this.myRef}
+      /> 
      <About/>
      <Contact/>
     </div>

@@ -5,16 +5,17 @@ import { NavigationContainer, NavigationTitle } from '../styled-components/Navig
 class Navigation extends Component {
   render() {
 
-    const { menuItems } = this.props;
+    const { menuItems, scrollToMyRef, navigationHeight } = this.props;
 
     return (
      <>
-     <NavigationContainer>
+     <NavigationContainer height = { navigationHeight +'px' }>
          <NavigationTitle>
          { this.props.title }
          </NavigationTitle>
          <NavigationMenu
          menuItems = { menuItems }
+         scrollToMyRef = {  scrollToMyRef }
          />
      </NavigationContainer>
      </>
