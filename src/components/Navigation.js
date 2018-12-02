@@ -9,7 +9,7 @@ class Navigation extends Component {
 
     return (
      <>
-     <NavigationContainer height = { navigationHeight +'px' }>
+     <NavigationContainer height = { navigationHeight +'px' } ref = { this.props.home_ref } >
          <NavigationTitle>
          { this.props.title }
          </NavigationTitle>

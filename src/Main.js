@@ -26,22 +26,30 @@ class Main extends Component {
   state = {
     
     menuItems: [
-      { label: 'Home' },
-      { label: 'My Work' },
-      { label: 'About' },
-      { label: 'Contact' },
+      { 
+        label: 'Home',
+        ref_name: this.home_ref = React.createRef(),
+       },
+      { 
+        label: 'My Work',
+        ref_name: this.myWork_ref = React.createRef(),
+      },
+      { 
+        label: 'About',
+        ref_name: this.about_ref = React.createRef(),
+      },
+      { 
+        label: 'Contact',
+        ref_name: this.contact_ref = React.createRef(),
+      },
     ],
 
   }
 
-  constructor(props) {
-    super(props)
-    this.myRef = React.createRef();
-}
-
-scrollToMyRef = () => {
+//  Function to scroll to the start of the component in the DOM
+scrollToMyRef = (refName) => {
   window.scrollTo({
-      top:this.myRef.current.offsetTop - navigationHeight, 
+      top:this.state.menuItems.ref_name === this.home_ref ? refName.current.offsetTop:refName.current.offsetTop - navigationHeight, 
       behavior: "smooth"
   })
 }
@@ -59,13 +67,18 @@ scrollToMyRef = () => {
     title = { `COFFEE ${ circleUniCode } AND ${ circleUniCode } CODE` }
     menuItems = { this.state.menuItems }
     navigationHeight = { navigationHeight }
+    home_ref = { this.home_ref }
     />
   
       <MyWork
-      myWork_ref={this.myRef}
+      myWork_ref = { this.myWork_ref }
       /> 
-     <About/>
-     <Contact/>
+     <About
+      about_ref = { this.about_ref }     
+     />
+     <Contact
+      contact_ref = { this.contact_ref }
+      />
     </div>
      </>
     );

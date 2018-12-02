@@ -7,7 +7,7 @@ class About extends Component {
   render() {
     return (
     <>
-    <AboutContainer>
+    <AboutContainer ref = { this.props.about_ref }>
         <AboutTitleContainer>
         <ContentHeader title = 'About' color = '#FFF' underline = {true} >
         </ContentHeader>

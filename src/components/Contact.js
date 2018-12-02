@@ -76,7 +76,7 @@ class Contact extends Component {
             </ContactInfoBody>
         </ContactInfoContainer>
         <ContactFormContainer>
-        <ContactTitleContainer>
+        <ContactTitleContainer ref = { this.props.contact_ref } >
         <ContentHeader title = 'Get In Touch' underline = {true}></ContentHeader>
         </ContactTitleContainer>
         <div style = {{ display:'grid', justifyContent:'center' }} >

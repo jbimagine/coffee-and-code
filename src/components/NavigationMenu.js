@@ -14,7 +14,7 @@ class NavigationMenu extends Component {
          {
            menuItems.map( (value, index) => 
              
-              <NavigationMenuItems key = { index } onClick = { () => { this.props.scrollToMyRef(); } } > { value.label } </NavigationMenuItems> 
+              <NavigationMenuItems key = { index } onClick = { () => { this.props.scrollToMyRef(value.ref_name); } } > { value.label } </NavigationMenuItems> 
               
              )
          }
