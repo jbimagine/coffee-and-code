@@ -45,13 +45,14 @@ class MyWork extends Component {
         
         </MyWorkTitleContainer>
         <div style = {{overflow:'hidden' }}>
-        <div style = {{ display:'grid', gridTemplateColumns:'repeat(5,1fr)', justifyItems:'center', marginTop:'100px', overflow:'auto' }} >
-        <div style = {{ backgroundColor:'rgb(94,158,202)', height: '275px', width: '200px', display:'grid',margin:'0 32px', borderRadius:'10px',  }}></div>
-        <div style = {{ backgroundColor:'rgb(94,158,202)', height: '275px', width: '200px', display:'grid',margin:'0 32px', borderRadius:'10px', }}></div>
-        <div style = {{ backgroundColor:'rgb(94,158,202)', height: '275px', width: '200px', display:'grid',margin:'0 32px', borderRadius:'10px',  }}></div>
-        <div style = {{ backgroundColor:'rgb(94,158,202)', height: '275px', width: '200px', display:'grid',margin:'0 32px', borderRadius:'10px', }}></div>
-        <div style = {{ backgroundColor:'rgb(94,158,202)', height: '275px', width: '200px', display:'grid',margin:'0 32px', borderRadius:'10px',  }}></div>
-        </div>
+      
+            <div style = {{ display:'flex', justifyContent:'center', marginTop:'100px', overflow:'auto' }} >
+                {
+                this.state.myWorkItems.map( ( value, index ) => 
+                        <div style = {{ backgroundColor:'rgb(94,158,202)', height: '350px', width: '300px', display:'grid',margin:'0 32px', borderRadius:'10px', }}></div>
+                )
+                }
+            </div>
         </div>
     </MyWorkContainer>
 
