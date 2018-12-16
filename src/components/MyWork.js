@@ -18,7 +18,7 @@ class MyWork extends Component {
             label: 'Babylon Demo',
             url:'temp',
             img: '',
-            key:'map', 
+            key:'babylon', 
         },
         { 
             label: 'Memory Magic',
