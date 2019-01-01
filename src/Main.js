@@ -43,7 +43,6 @@ class Main extends Component {
         ref_name: this.contact_ref = React.createRef(),
       },
     ],
-
   }
 
 //  Function to scroll to the start of the component in the DOM
