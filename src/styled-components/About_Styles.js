@@ -7,6 +7,7 @@ display:grid;
     color:#FFF;
     background-color:rgb(94, 158, 202);
     grid-template-rows:80px;
+    position:relative;
 `;
 
 export const AboutTitleContainer = styled.div `
