@@ -21,7 +21,7 @@ export const media = Object.keys(sizes).reduce((acc, label) => {
   }, {})
 
 
-export const ContentHeader = ({ color, title, fontSize, underline, fontWeight, textTransform, padding, letterSpacing, textAlign }) => (
+export const ContentHeader = ({ color, title, fontSize, underline, fontWeight, textTransform, padding, letterSpacing, textAlign, hrBorderColor, titleMarginRight }) => (
     <div
        style={{
            color: color,
@@ -32,9 +32,14 @@ export const ContentHeader = ({ color, title, fontSize, underline, fontWeight, t
            letterSpacing: letterSpacing?letterSpacing:'8px',
            textAlign: textAlign?textAlign:'left',
        }}
-   >{ title }
+   >
+   <div style = {{ marginRight: titleMarginRight?titleMarginRight:'-8px' }} >{ title }</div>
    {
-       underline?<hr />:null
+       underline?<hr 
+            style = {{
+                borderColor: hrBorderColor?hrBorderColor:'#000',
+            }}
+       />:null
    }
    </div> 
    

@@ -9,7 +9,7 @@ class About extends Component {
     <>
     <AboutContainer ref = { this.props.about_ref }>
         <AboutTitleContainer>
-        <ContentHeader title = 'About' color = '#FFF' underline = {true} >
+        <ContentHeader title = 'About' color = '#FFF' underline = {true} hrBorderColor = 'white' >
         </ContentHeader>
         </AboutTitleContainer>
        <div style = {{ display:'grid', gridTemplateColumns:'1fr', height:'100%', position:'absolute', width:'100%', alignContent:'center' }}>
