@@ -84,6 +84,18 @@ export const ContactInputItems = styled.input `
     border-bottom: 1px solid #FFF;
     color:#FFF;
     margin:24px 0;
+    
+    ${'' /* Creates a transparent background, replacing the default auto-fill
+        that chrome ships with.
+     */}
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+        -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+        -webkit-transition-delay: 9999s;
+  }
+
     justify-self: ${ props => props.justifySelf?props.justifySelf:'start' };
 
     &:focus {
