@@ -22,7 +22,7 @@ class About extends Component {
           I am a Front End Software Engineer with specialities in HTML, CSS, Javascript, React, and Babylon.  
           I currently live and work in San Francisco, CA where I am a Software Engineer for one of the leading 
           Interior Designing companies, Modsy.  I am also the creator of the Youtube channel Coffee and Code sharing
-          my knowledge of coding with Javascript with the masses.   
+          my knowledge of coding in Javascript with the masses.   
           </div>
 
        </div>
