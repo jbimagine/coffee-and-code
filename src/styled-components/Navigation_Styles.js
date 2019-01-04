@@ -22,6 +22,7 @@ export const NavigationContainer = styled.div `
 
 export const NavigationTitle = styled.div `
     display:grid;
+    text-align:center;
     letter-spacing:8px;
     grid-column: 1/1;
     align-items:center;
