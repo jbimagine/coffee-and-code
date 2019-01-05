@@ -4,6 +4,7 @@ import MyWork from './components/MyWork';
 import About from './components/About';
 import Contact from './components/Contact';
 import coffeeAndCodeSVG from './imgs/coffee_and_code_image_04.jpg';
+import { sizes } from './styled-components/Global_styles';
 
 const sx = {
   background : {
@@ -43,6 +44,34 @@ class Main extends Component {
         ref_name: this.contact_ref = React.createRef(),
       },
     ],
+    menuOpen: false,
+    width: window.innerWidth,
+    height: window.innerHeight,
+  }
+
+  componentDidMount() {
+    window.addEventListener('load', this.handleResize);
+    window.addEventListener('resize', this.handleResize);
+  }
+
+  componentWillUnmount() {
+    window.addEventListener('load', this.handleResize);
+    window.removeEventListener('resize', this.handleResize );
+  }
+
+  componentDidUpdate() {
+
+  }
+
+  // Here we need to get the current window size 
+  handleResize = () => {
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
+    this.state.width > sizes.tablet ? this.setState({ menuOpen:true }) : this.setState({ menuOpen:false });
+  }
+
+  // Funtion handles the opening and closing of the responsive menu
+  handleMenuVisibility = () => {
+    this.setState({ menuOpen:!this.state.menuOpen });
   }
 
 //  Function to scroll to the start of the component in the DOM
@@ -67,6 +96,8 @@ scrollToMyRef = (refName) => {
     menuItems = { this.state.menuItems }
     navigationHeight = { navigationHeight }
     home_ref = { this.home_ref }
+    handleMenuVisibility = { this.handleMenuVisibility }
+    menuOpen = { this.state.menuOpen }
     />
   
       <MyWork

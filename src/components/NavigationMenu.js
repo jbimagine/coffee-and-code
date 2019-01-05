@@ -5,12 +5,13 @@ import menuIconSVG from '../imgs/menu_icon.svg';
 class NavigationMenu extends Component {
   render() {
 
-    const { menuItems } = this.props;
+    const { menuItems, menuOpen } = this.props;
 
     return (
      <>
         
-         <NavigationMenuContainer>
+         {
+           menuOpen && <NavigationMenuContainer>
          {
            menuItems.map( (value, index) => 
              
@@ -19,9 +20,10 @@ class NavigationMenu extends Component {
              )
          }
         </NavigationMenuContainer>
+         }
         
         <NavigationMenuIconContainer>
-            <NavigationMenuIcon  src = { menuIconSVG }/>
+            <NavigationMenuIcon onClick = { this.props.handleMenuVisibility } src = { menuIconSVG }/>
         </NavigationMenuIconContainer>
      </>
     );

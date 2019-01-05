@@ -40,7 +40,18 @@ export const NavigationMenuContainer = styled.div `
     grid-template-columns:repeat(4, auto);
     margin-right:32px;
 
-    ${ media.tablet`display:none;` }
+    ${ media.tablet`
+    position: absolute;
+    right: 0;
+    top: 100px;
+    background-color: rgba(94,158,202);
+    height: 300px;
+    width: 100vw;
+    justify-content: center;
+    max-height:none;
+    margin-right:0;
+    grid-template-columns:none;
+    ` }
 `;
 
 export const NavigationMenuItems = styled.div `
@@ -50,6 +61,11 @@ export const NavigationMenuItems = styled.div `
     letter-spacing:4px;
     cursor:pointer;
     justify-content:end;
+
+    ${ media.tablet`
+        justify-content:center;
+    `
+    }
 `;
 
 export const NavigationMenuIconContainer = styled.div `

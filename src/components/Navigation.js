@@ -5,7 +5,7 @@ import { NavigationContainer, NavigationTitle } from '../styled-components/Navig
 class Navigation extends Component {
   render() {
 
-    const { menuItems, scrollToMyRef, navigationHeight } = this.props;
+    const { menuItems, scrollToMyRef, navigationHeight, menuOpen } = this.props;
 
     return (
      <>
@@ -14,8 +14,10 @@ class Navigation extends Component {
          { this.props.title }
          </NavigationTitle>
          <NavigationMenu
-         menuItems = { menuItems }
-         scrollToMyRef = {  scrollToMyRef }
+          menuItems = { menuItems }
+          scrollToMyRef = {  scrollToMyRef }
+          handleMenuVisibility = { this.props.handleMenuVisibility }
+          menuOpen = { menuOpen }
          />
      </NavigationContainer>
      </>
