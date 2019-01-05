@@ -99,16 +99,20 @@ scrollToMyRef = (refName) => {
     handleMenuVisibility = { this.handleMenuVisibility }
     menuOpen = { this.state.menuOpen }
     />
-  
-      <MyWork
+
+    <MyWork
       myWork_ref = { this.myWork_ref }
       /> 
-     <About
+
+    <About
       about_ref = { this.about_ref }     
      />
+  
+     {/*  
+     
      <Contact
       contact_ref = { this.contact_ref }
-      />
+      /> */}
     </div>
      </>
     );
