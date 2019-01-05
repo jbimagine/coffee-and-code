@@ -92,7 +92,7 @@ scrollToMyRef = (refName) => {
     <div>
     <Navigation
     scrollToMyRef = { this.scrollToMyRef }
-    title = { `COFFEE ${ circleUniCode } AND ${ circleUniCode } CODE` }
+    title = { `COFFEE ${ circleUniCode } & ${ circleUniCode } CODE` }
     menuItems = { this.state.menuItems }
     navigationHeight = { navigationHeight }
     home_ref = { this.home_ref }
