@@ -20,11 +20,12 @@ export const media = Object.keys(sizes).reduce((acc, label) => {
     return acc
   }, {})
 
+const defaultColor = '#404040';
 
-export const ContentHeader = ({ color, title, fontSize, underline, fontWeight, textTransform, padding, letterSpacing, textAlign, hrBorderColor, titleMarginRight }) => (
+export const ContentHeader = ({ color, title, fontSize, underline, fontWeight, textTransform, padding, letterSpacing, textAlign, titleMarginRight, background, height }) => (
     <div
        style={{
-           color: color,
+           color: color?color:defaultColor,
            textTransform:textTransform?textTransform:'uppercase',
            fontSize:fontSize?fontSize:'28px',
            fontWeight:fontWeight,
@@ -35,9 +36,10 @@ export const ContentHeader = ({ color, title, fontSize, underline, fontWeight, t
    >
    <div style = {{ marginRight: titleMarginRight?titleMarginRight:'-8px' }} >{ title }</div>
    {
-       underline?<hr 
+       underline?<div 
             style = {{
-                borderColor: hrBorderColor?hrBorderColor:'#000',
+                background: background?background:defaultColor,
+                height: height?height:'1px',
             }}
        />:null
    }

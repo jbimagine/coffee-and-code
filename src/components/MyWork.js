@@ -46,7 +46,7 @@ class MyWork extends Component {
     <>
     <MyWorkContainer ref={this.props.myWork_ref}>
         <MyWorkTitleContainer>
-            <ContentHeader title ='My Work' underline = {true}/>
+            <ContentHeader title ='My Work' underline = {true}  />
         
         </MyWorkTitleContainer>
         <div style = {{overflow:'hidden', display:'flex',  alignItems:'center', height:'100%', position:'relative', maxWidth:'100%', }}>
