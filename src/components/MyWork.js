@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { MyWorkContainer, MyWorkTitleContainer, } from '../styled-components/MyWork_Styles';
-import { ContentHeader } from '../styled-components/Global_styles';
+import { MyWorkContainer, MyWorkTitleContainer, MyWorkImageContainer } from '../styled-components/MyWork_Styles';
+import { ContentHeader, BorderContainer } from '../styled-components/Global_styles';
 
 
 class MyWork extends Component {
@@ -39,7 +39,7 @@ class MyWork extends Component {
   render() {
 
     let myWorkItems = this.state.myWorkItems.map( ( value, index ) => 
-    <div  key = { index } style = {{ backgroundColor:'rgb(94,158,202)', height: '350px', width: '300px', display:'grid',margin:'0 32px', borderRadius:'10px', flexShrink:'0' }}></div>
+    <MyWorkImageContainer  key = { index } />
 )
 
     return (
@@ -49,14 +49,14 @@ class MyWork extends Component {
             <ContentHeader title ='My Work' underline = {true}/>
         
         </MyWorkTitleContainer>
-        <div style = {{overflow:'hidden', display:'flex',  alignItems:'center', height:'100%', position:'absolute', maxWidth:'100%' }}>
-        <div style = {{ zIndex:'3', height:'100%', position:'absolute', width:'200px', background:'linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%)' }} ></div>      
+        <div style = {{overflow:'hidden', display:'flex',  alignItems:'center', height:'100%', position:'relative', maxWidth:'100%', }}>
+        <BorderContainer background = { 'linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%)' } />      
             <div style = {{ display:'flex', justifyContent:'center', overflow:'hidden', gridColumn:'2',  position:'relative', width:'100vw' }} >
         
                 { myWorkItems }
                 
             </div>
-            <div style = {{ background:'linear-gradient(to left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%)', zIndex:'3', height:'100%', position:'absolute', width:'200px', right:'0' }} ></div>      
+            <BorderContainer background = { 'linear-gradient(to left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%)' } right = { 0 } />      
         </div>
     </MyWorkContainer>
 

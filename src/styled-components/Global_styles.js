@@ -69,3 +69,12 @@ export const FormButton = styled.button `
     width:${ props => props.width?props.width: `75px`};
     height:${ props => props.height?props.height: `25px`};
 `;
+
+export const BorderContainer = styled.div `
+    z-index:3;
+    height:100%;
+    position:absolute;
+    width:200px;
+    background: ${ props => props.background };
+    right: ${ props => props.right };
+`;
