@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavigationMenuItems, NavigationMenuContainer, NavigationMenuIconContainer, NavigationMenuIcon } from '../styled-components/Navigation_Styles';
+import { NavigationMenuItems, NavigationMenuContainer, NavigationMenuIconContainer, NavigationMenuIcon, NavigationMenuItemsContainer } from '../styled-components/Navigation_Styles';
 import menuIconSVG from '../imgs/menu_icon.svg';
 
 class NavigationMenu extends Component {
@@ -15,8 +15,10 @@ class NavigationMenu extends Component {
          {
            menuItems.map( (value, index) => 
              
-              <NavigationMenuItems key = { index } onClick = { () => { this.props.scrollToMyRef(value.ref_name); } } > { value.label } </NavigationMenuItems> 
-              
+              <NavigationMenuItemsContainer key = { index } onClick = { () => { this.props.scrollToMyRef(value.ref_name); } } >
+                <NavigationMenuItems>{ value.label }</NavigationMenuItems>
+               </NavigationMenuItemsContainer> 
+                
              )
          }
         </NavigationMenuContainer>

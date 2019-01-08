@@ -54,19 +54,35 @@ export const NavigationMenuContainer = styled.div `
     ` }
 `;
 
-export const NavigationMenuItems = styled.div `
+export const NavigationMenuItemsContainer = styled.div `
     display:grid;
     font-size:12px;
     margin: 0 8px;
     letter-spacing:4px;
-    cursor:pointer;
     justify-content:end;
+    line-height:24px;
+    height:24px;
 
     ${ media.tablet`
         justify-content:center;
     `
     }
 `;
+
+export const NavigationMenuItems = styled.div `
+    cursor:pointer;
+  
+    &:hover {
+        border-bottom:1px solid #fff;
+        padding-bottom:3px;
+    }
+
+    ${ media.tablet`
+        justify-content:center;
+    `
+    }
+`;
+
 
 export const NavigationMenuIconContainer = styled.div `
     display:none;
