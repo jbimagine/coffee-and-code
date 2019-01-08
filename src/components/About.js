@@ -12,7 +12,7 @@ class About extends Component {
         <ContentHeader title = 'About' color = '#FFF' underline = {true} background = 'white' >
         </ContentHeader>
         </AboutTitleContainer>
-       <div style = {{ display:'flex', flexDirection:'column', height:'100%', position:'relative', justifyContent:'center', width:'100%', backgroundColor:'rgb(94,158,202)', padding:'24px 0' }}>
+       <div style = {{ display:'flex', flexDirection:'column', height:'100%', position:'relative', justifyContent:'center', width:'100%', backgroundColor:'rgb(94,158,202)', }}>
           <div style = {{ display:'flex', justifyContent:'center', alignItems:'center', width:'100%' }}>
             <AboutImage></AboutImage>
           </div>
