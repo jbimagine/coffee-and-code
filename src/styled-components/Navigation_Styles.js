@@ -51,6 +51,8 @@ export const NavigationMenuContainer = styled.div `
     max-height:none;
     margin-right:0;
     grid-template-columns:none;
+    box-shadow:0 5px 20px -1px #006ead36;
+    border-bottom:1px solid #ddd;
     ` }
 `;
 
