@@ -5,50 +5,22 @@ import {
     ContactTitleContainer, 
     ContactFormContainer,  
     } from '../styled-components/Contact_Styles';
-    import { ContentHeader } from '../styled-components/Global_styles';
+import { ContentHeader } from '../styled-components/Global_styles';
+import  coffeeAndCode8  from '../imgs/coffee_and_code_image_08.jpg';
 
+const sx = {
+    background : {
+      height:'100vh',
+      backgroundImage:`url(${ coffeeAndCode8 })`, 
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition:'center',
+      position:'relative',
+      opacity:1,
+    }
+  }
 
 class Contact extends Component {
-
-    state = {
-        contactItems:
-        [
-            {
-                label: 'Address',
-                key: 'header_main',
-            },
-            {
-                label: '2020 Judah St. Unit A',
-                key: 'header_secondary',
-            },
-            {
-                label: 'Contact',
-                key: 'header_main',
-            },
-            {
-                label: 'Joseph D. Bates',
-                key: 'header_secondary',
-            },
-            {
-                label: 'Phone',
-                key: 'header_main',
-            },
-            {
-                label: '1-415-770-7058',
-                key: 'header_secondary',
-            },
-            {
-                label: 'Email',
-                key: 'header_main',
-            },
-            {
-                label:'joebates@jbimagine.com',
-                key: 'header_secondary',
-            },
-        ],
-        fields: {},
-    
-    } 
 
     onSubmit = ( fields ) => {
         this.setState({ fields })
@@ -57,16 +29,9 @@ class Contact extends Component {
 
   render() {
 
-    const listOfContactItems =  this.state.contactItems.map(( item, index ) => 
-        
-        item.key === 'header_main'? 
-        <ContentHeader key ={ index } title = { item.label } fontSize = '12px' color= '#666' fontWeight = {500} padding= '0 0 8px 0'/>
-        :
-        <ContentHeader key = { index } title = { item.label } fontSize = '14px' padding ='0 0 36px 0' />
-        )
-
     return (
     <>
+    <div style = { sx.background }>
     <ContactContainer>
         <ContactFormContainer>
         <ContactTitleContainer ref = { this.props.contact_ref } >
@@ -83,6 +48,7 @@ class Contact extends Component {
         </ContactFormContainer>
         
     </ContactContainer>
+    </div>
 
     </>
     );

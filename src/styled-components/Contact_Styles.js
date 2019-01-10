@@ -4,12 +4,12 @@ import styled from 'styled-components';
 export const ContactContainer = styled.div `
     display:grid;
     color:#FFF;
-    background-color:rgb(94, 158, 202);    
+    height:100%;
 `;
 
 export const ContactFormContainer = styled.div `
     padding:0 36px;
-    background: rgb(94,158,202);
+    background: rgb(94,158,202, 0.90);
 
 
     @media (min-width: 1001px) {
