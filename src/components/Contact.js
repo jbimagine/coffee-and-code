@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import ContactForm from './ContactForm';
 import { 
     ContactContainer, 
-    ContactInfoContainer,
-    ContactInfoBody, 
     ContactTitleContainer, 
     ContactFormContainer,  
     } from '../styled-components/Contact_Styles';
@@ -70,17 +68,12 @@ class Contact extends Component {
     return (
     <>
     <ContactContainer>
-        <ContactInfoContainer>
-            <ContactInfoBody>
-                { listOfContactItems }
-            </ContactInfoBody>
-        </ContactInfoContainer>
         <ContactFormContainer>
         <ContactTitleContainer ref = { this.props.contact_ref } >
-        <ContentHeader title = 'Get In Touch' underline = {true} background = 'white' ></ContentHeader>
+        <ContentHeader title = 'Get In Touch' underline = {true} background = '#FFF' color = '#FFF' ></ContentHeader>
         </ContactTitleContainer>
         <div style = {{ display:'grid', justifyContent:'center' }} >
-        <ContentHeader title = 'Want to know more?  Drop me a line!' fontSize = '16px' padding = '48px 0' textAlign = 'center' />
+        <ContentHeader title = 'Want to know more?  Drop me a line!' color = '#FFF' fontSize = '16px' padding = '48px 0' textAlign = 'center' />
         </div>
 
         <ContactForm

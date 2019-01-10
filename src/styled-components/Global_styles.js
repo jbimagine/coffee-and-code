@@ -20,7 +20,7 @@ export const media = Object.keys(sizes).reduce((acc, label) => {
     return acc
   }, {})
 
-const defaultColor = '#404040';
+const defaultColor = 'rgb(94,140,185)';
 
 export const ContentHeader = ({ color, title, fontSize, underline, fontWeight, textTransform, padding, letterSpacing, textAlign, titleMarginRight, background, height }) => (
     <div
