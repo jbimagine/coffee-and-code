@@ -10,13 +10,14 @@ import  coffeeAndCode8  from '../imgs/coffee_and_code_image_08.jpg';
 
 const sx = {
     background : {
-      height:'100vh',
       backgroundImage:`url(${ coffeeAndCode8 })`, 
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
       backgroundPosition:'center',
-      position:'relative',
       opacity:1,
+      overflowY:'hidden',
+      height:'calc(100vh - 50px)',
+
     }
   }
 
@@ -32,9 +33,9 @@ class Contact extends Component {
     return (
     <>
     <div style = { sx.background }>
-    <ContactContainer>
+    <ContactContainer ref = { this.props.contact_ref } >
         <ContactFormContainer>
-        <ContactTitleContainer ref = { this.props.contact_ref } >
+        <ContactTitleContainer>
         <ContentHeader title = 'Get In Touch' underline = {true} background = '#FFF' color = '#FFF' ></ContentHeader>
         </ContactTitleContainer>
         <div style = {{ display:'grid', justifyContent:'center' }} >
