@@ -12,7 +12,7 @@ export const NavigationContainer = styled.div `
     align-items:center;
     color:white;
     width:100vw;
-    background-color: rgba(94, 158, 202, 0.75);
+    background-color: rgba(94, 158, 202, 0.95);
     height: ${ props => props.height } ;
     position:fixed;
     text-transform:uppercase;
