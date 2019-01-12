@@ -1,6 +1,6 @@
 
 import styled from 'styled-components';
-import { media } from './Global_styles';
+import { media } from 'styled-components/Global_styles';
 
 export const MyWorkContainer = styled.div `
     height:calc(100vh - 100px);

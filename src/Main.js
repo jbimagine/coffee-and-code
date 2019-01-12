@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Navigation from './components/Navigation';
-import MyWork from './components/MyWork';
-import About from './components/About';
-import Contact from './components/Contact';
-import coffeeAndCodeSVG from './imgs/coffee_and_code_image_04.jpg';
-import { sizes } from './styled-components/Global_styles';
+import Navigation from 'components/Navigation';
+import MyWork from 'components/MyWork';
+import About from 'components/About';
+import Contact from 'components/Contact';
+import coffeeAndCodeSVG from 'imgs/coffee_and_code_image_04.jpg';
+import { sizes } from 'styled-components/Global_styles';
 
 const sx = {
   background : {

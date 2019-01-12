@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { NavigationMenuItems, NavigationMenuContainer, NavigationMenuIconContainer, NavigationMenuIcon, NavigationMenuItemsContainer } from '../styled-components/Navigation_Styles';
-import menuIconSVG from '../imgs/menu_icon.svg';
+import { NavigationMenuItems, NavigationMenuContainer, NavigationMenuIconContainer, NavigationMenuIcon, NavigationMenuItemsContainer } from 'styled-components/Navigation_Styles';
+import menuIconSVG from 'imgs/menu_icon.svg';
 
 class NavigationMenu extends Component {
   render() {

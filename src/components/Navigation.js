@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import NavigationMenu from './NavigationMenu';
-import { NavigationContainer, NavigationTitle } from '../styled-components/Navigation_Styles';
+import NavigationMenu from 'components/NavigationMenu';
+import { NavigationContainer, NavigationTitle } from 'styled-components/Navigation_Styles';
 
 class Navigation extends Component {
   render() {

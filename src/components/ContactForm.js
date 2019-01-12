@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { ContactInputItems, ContactTextArea, ContactInputItemsContainer } from '../styled-components/Contact_Styles';
-import { FormButtonContainer, FormButton } from '../styled-components/Global_styles';
+import { ContactInputItems, ContactTextArea, ContactInputItemsContainer } from 'styled-components/Contact_Styles';
+import { FormButtonContainer, FormButton } from 'styled-components/Global_styles';
 
 
 class ContactForm extends Component {

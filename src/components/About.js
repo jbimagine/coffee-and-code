@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { AboutContainer, AboutTitleContainer, AboutImage, AboutImageContainer } from '../styled-components/About_Styles';
-import { ContentHeader } from '../styled-components/Global_styles';
+import { AboutContainer, AboutTitleContainer, AboutImage } from 'styled-components/About_Styles';
+import { ContentHeader } from 'styled-components/Global_styles';
 
 class About extends Component {
 

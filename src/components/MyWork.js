@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { MyWorkContainer, MyWorkTitleContainer, MyWorkImageContainer } from '../styled-components/MyWork_Styles';
-import { ContentHeader, BorderContainer } from '../styled-components/Global_styles';
+import { MyWorkContainer, MyWorkTitleContainer, MyWorkImageContainer } from 'styled-components/MyWork_Styles';
+import { ContentHeader, BorderContainer } from 'styled-components/Global_styles';
 
 
 class MyWork extends Component {
