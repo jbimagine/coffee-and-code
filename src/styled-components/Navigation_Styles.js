@@ -2,6 +2,7 @@
 import styled from 'styled-components';
 import { media } from 'styled-components/Global_styles';
 
+const Primary_Color = 'rgb(51,80,117)'
 
 export const NavigationContainer = styled.div `
     display:grid;
@@ -12,7 +13,7 @@ export const NavigationContainer = styled.div `
     align-items:center;
     color:white;
     width:100vw;
-    background-color: rgb(51, 80, 117);
+    background-color: ${Primary_Color};
     height: ${ props => props.height } ;
     position:fixed;
     text-transform:uppercase;
@@ -44,7 +45,7 @@ export const NavigationMenuContainer = styled.div `
     position: absolute;
     right: 0;
     top: 100px;
-    background-color: rgba(94,158,202);
+    background-color: ${Primary_Color};
     height: 300px;
     width: 100vw;
     justify-content: center;

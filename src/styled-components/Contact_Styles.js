@@ -1,5 +1,6 @@
 
 import styled from 'styled-components';
+import { media } from 'styled-components/Global_styles'
 
 export const ContactContainer = styled.div `
     color:#FFF;
@@ -87,4 +88,9 @@ export const ContactTextArea = styled.textarea `
     height:350px;
     margin: 0 0 24px 0;
     resize:none;
+
+    ${ media.phone`
+    height:250px;
+    `
+    }
 `;

@@ -10,6 +10,9 @@ class Navigation extends Component {
     return (
      <>
      <NavigationContainer height = { navigationHeight +'px' } ref = { this.props.home_ref } >
+     <div style = {{ width:'100vw', height:'1px', position:'fixed', top:'100px', display:'flex', justifyContent:'center', zIndex:7 }}>
+       <div style ={{ width:'80vw', background:'#DDD', height:'100%', }}></div>
+     </div>
          <NavigationTitle>
          { this.props.title }
          </NavigationTitle>

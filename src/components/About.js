@@ -18,9 +18,9 @@ class About extends Component {
           </div>
        
        <div style = {{ width:'100%', display:'flex', justifyContent:'center',}}>
-       <div style = {{ width:'75%', textAlign:'justify', textAlignLast:'center', alignItems:'center', height:'300px' }}>
-       <div style = {{ justifyContent:'center', display:'flex', margin:'32px 0',  }}>Hi, I'm Joe Bates.  Pleased to meet you!</div>
-          <div>
+       <div style = {{ width:'75%', textAlign:'justify', textAlignLast:'center', alignItems:'center', height:'auto' }}>
+       <div style = {{ justifyContent:'center', display:'flex', margin:'32px 0', }}>Hi, I'm Joe Bates.  Pleased to meet you!</div>
+          <div style = {{  paddingBottom:'24px' }}>
           I am a Front End Software Engineer with specialities in HTML, CSS, Javascript, React, and Babylon.  
           I currently live and work in San Francisco, CA where I am a Software Engineer for one of the leading 
           Interior Designing companies, Modsy.  I am also the creator of the Youtube channel Coffee & Code sharing

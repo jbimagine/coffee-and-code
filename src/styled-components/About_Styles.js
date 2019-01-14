@@ -4,11 +4,16 @@ import { media } from 'styled-components/Global_styles';
 
 export const AboutContainer = styled.div `
 display:grid;
-    height:calc(100vh - 100px);
     color:#FFF;
     background-color:rgb(94, 158, 202);
     grid-template-rows:80px;
     position:relative;
+    height: calc(100vh - 100px);
+
+    ${ media.tablet`
+    height:auto;
+    `
+    }
 `;
 
 export const AboutTitleContainer = styled.div `
