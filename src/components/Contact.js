@@ -15,8 +15,6 @@ const sx = {
       backgroundRepeat: 'no-repeat',
       backgroundPosition:'center',
       opacity:1,
-      overflowY:'hidden',
-      height:'calc(100vh - 50px)',
 
     }
   }

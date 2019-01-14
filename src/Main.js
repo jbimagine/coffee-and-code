@@ -5,6 +5,7 @@ import About from 'components/About';
 import Contact from 'components/Contact';
 import coffeeAndCodeSVG from 'imgs/coffee_and_code_image_04.jpg';
 import { sizes } from 'styled-components/Global_styles';
+import Footer from 'components/Footer';
 
 const sx = {
   background : {
@@ -18,7 +19,8 @@ const sx = {
   }
 }
 
-const navigationHeight = 100
+const navigationHeight = 100;
+const footerHeight = 60;
 
 const circleUniCode = String.fromCharCode(9675);
 
@@ -108,9 +110,15 @@ scrollToMyRef = (refName) => {
       about_ref = { this.about_ref }     
      />
      
-     <Contact
+    <Contact
       contact_ref = { this.contact_ref }
       /> 
+    
+    <Footer 
+      footerHeight = { footerHeight }
+      contentMain = {  <div>&copy; 2019 Jbimagine Studios</div> }
+      contentSub = { 'Joseph D. Bates' }
+     />
     </div>
      </>
     );

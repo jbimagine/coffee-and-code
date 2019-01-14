@@ -2,10 +2,7 @@
 import styled from 'styled-components';
 
 export const ContactContainer = styled.div `
-    display:grid;
     color:#FFF;
-    height:calc(100vh - 50px); 
-    position:relative;
 `;
 
 export const ContactFormContainer = styled.div `
